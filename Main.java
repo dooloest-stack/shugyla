@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         DatabaseInitializer.init();
         ClinicFacade facade = new ClinicFacade();
-        seedDoctorsIfNeeded(facade);
+        SeedData.seedDoctorsIfNeeded(facade);
         mainMenu(facade);
     }
 
